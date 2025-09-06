@@ -1,13 +1,10 @@
-// Track how many items have been added
 let itemsAdded = 0;
 
-// Change the paragraph to the shorter version
 document.getElementById("changeTextBtn").addEventListener("click", function () {
     document.getElementById("myParagraph").innerHTML =
         "I can express my emotions through painting when words aren’t enough. Each color and brushstroke reflects how I feel inside.";
 });
 
-// Add a new list item in order (Digital Painting → Spray Painting)
 document.getElementById("addItemBtn").addEventListener("click", function () {
     const list = document.getElementById("myList");
 
@@ -26,7 +23,6 @@ document.getElementById("addItemBtn").addEventListener("click", function () {
     }
 });
 
-// Remove the last list item and track how many were removed
 document.getElementById("removeItemBtn").addEventListener("click", function () {
     const list = document.getElementById("myList");
     if (list.lastElementChild) {
@@ -36,3 +32,4 @@ document.getElementById("removeItemBtn").addEventListener("click", function () {
         }
     }
 });
+
